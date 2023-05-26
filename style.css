@@ -18,7 +18,18 @@
 }
 
 .inputs {
-  border-radius: 5px;
+  border-radius: 10px;
+  width: 35%;
+  margin-left: 10px;
+  height: 35%;
+}
+
+#botao1 {
+  margin-left: 10px;
+  height: 35%;
+  border-radius: 10px;
+  background-color: blueviolet;
+  color: white;
 }
 
 .main-form {
