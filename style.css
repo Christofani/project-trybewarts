@@ -3,15 +3,20 @@
   width: 100%;
   height: 100px;
   background-color: rgb(50, 167, 145);
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+#trybewarts-header-title {
+  display: flex;
+  align-items: center;
+  color: white;
 }
 
 .trybewarts-login {
   display: flex;
   align-items: center;
-  margin-right: 10%;
 }
 
 .inputs {
-    border-radius: 5px;
+  border-radius: 5px;
 }
