@@ -20,3 +20,13 @@
 .inputs {
   border-radius: 5px;
 }
+
+.main-form {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  border: 2px solid black;
+}
