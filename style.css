@@ -35,8 +35,8 @@
 
 main {
   display: flex;
-  justify-content: center
-} 
+  justify-content: center;
+}
 
 #evaluation-form {
   display: flex;
@@ -85,10 +85,6 @@ main {
   border-radius: 10px;
   background-color: blueviolet;
   color: white;
-}
-
-#email-casas {
-  margin-bottom: 20px;
 }
 
 .footer {
