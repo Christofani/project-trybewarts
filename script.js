@@ -14,3 +14,18 @@ const validaDados = () => {
   });
 };
 validaDados();
+
+// --------- Requisito 18 ---------
+
+const checkBox = document.querySelector('#agreement');
+const btnSub = document.querySelector('#submit-btn');
+
+const verificaCheckBox = () => {
+  if (checkBox.value) {
+    console.log(checkBox.value);
+    btnSub.disabled = false;
+    return;
+  } btnSub.disabled = true;
+};
+
+checkBox.addEventListener('change', verificaCheckBox);
