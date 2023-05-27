@@ -33,10 +33,10 @@
   color: white;
 }
 
-.main-form {
+main {
   display: flex;
-  justify-content: center;
-}
+  justify-content: center
+} 
 
 #evaluation-form {
   display: flex;
@@ -51,16 +51,13 @@
   height: 500px;
 }
 
-.footer {
-  text-align: center;
-  margin-bottom: 20px;
-  background-color: rgb(110, 107, 107);
-  color: white;
-}
-
 .section-form {
   display: flex;
   margin-bottom: 10px;
+}
+
+#email-casas {
+  display: flex;
 }
 
 #areaDoTexto {
@@ -90,5 +87,14 @@
   color: white;
 }
 
+#email-casas {
+  margin-bottom: 20px;
+}
 
+.footer {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: rgb(110, 107, 107);
+  color: white;
+}
 

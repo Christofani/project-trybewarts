@@ -21,26 +21,34 @@
             <button type="submit" id="botao1">Entrar</button>
         </form>
     </header>
-    <main class="main-form">
-        <form id="evaluation-form" action="">
+    <main>
+        <form id="evaluation-form">
             <!-- Requisito 10-->
-            <section class="section-form">
-                <input class="form-control" id="input-name" type="text" placeholder="Nome">
-                <input class="form-control" id="input-lastname" type="text" placeholder="Sobrenome">
-            </section>
-            <section class="section-form">
-                <input class="form-control" id="input-email" type="email" placeholder="Email">
-                <select id="house" class="form-select" name="Casa">
-                    <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-                    <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-                    <option id="corvinode-house" value="Corvinode">Corvinode</option>
-                    <option id="pytherina-house" value="Pytherina">Pytherina</option>
-                </select>
-            </section>
+            <div class="section-form">
+                <label>
+                    <input class="form-control" id="input-name" type="text" placeholder="Nome">
+                </label>
+                <label>
+                    <input class="form-control" id="input-lastname" type="text" placeholder="Sobrenome">
+                </label>
+            </div>
+            <div id="email-casas">
+                <label>
+                    <input  id="input-email" class="form-control"  type="email" placeholder="Email">
+                </label>
+                <label>
+                    <select id="house" class="form-select" name="Casa">
+                        <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+                        <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+                        <option id="corvinode-house" value="Corvinode">Corvinode</option>
+                        <option id="pytherina-house" value="Pytherina">Pytherina</option>
+                    </select>
+                </label>
+            </div>
             <!-- Requisito 12-->
             <section class="section-main">
                 <section class="form-radius">
-                    <label  for="" id="label-family">Qual sua família?
+                    <label  for="" id="label-family">Qual sua família?</label>
                     <div>
                         <input type="radio" name="family" id="" value="Frontend">Frontend
                     </div>
@@ -50,11 +58,10 @@
                     <div>
                         <input type="radio" name="family" id="" value="FullStack">FullStack
                     </div>
-                </label>
                 </section>
                 <!-- Requisito 13-->
                 <section class="form-radius">
-                    <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?
+                    <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
                     <div class="divs-radius">
                         <label for="hofs">Hofs
                             <input type="checkbox" name="" id="hofs" class="subject" value="HoFs">
@@ -77,7 +84,6 @@
                             <input type="checkbox" name="" id="python" class="subject" value="Python">
                         </label>
                     </div>
-                    </label>
                 </section>
             </section>
             <!-- Requisito 14-->
@@ -111,10 +117,8 @@
         <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="logo da Trybewarts">
     </main>
     <script src="script.js"></script>
+    <footer class="footer">
+        Direitos reservados à Trybewarts©
+    </footer>
 </body>
-<!-- Requisito 19-->
-<footer class="footer">
-    Direitos reservados à Trybewarts©
-</footer>
-
 </html>
