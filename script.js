@@ -2,7 +2,7 @@ const botao = document.querySelector('#botao1');
 
 const validaDados = () => {
   botao.addEventListener('click', () => {
-    const email = document.querySelector('#input-email');
+    const email = document.querySelector('#input-email1');
     const valorEmail = email.value;
     const senha = document.querySelector('#input-senha');
     const valorSenha = senha.value;
