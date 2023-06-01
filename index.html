@@ -25,30 +25,22 @@
         <form id="evaluation-form">
             <!-- Requisito 10-->
             <div class="section-form">
-                <label>
-                    <input class="form-control" id="input-name" type="text" placeholder="Nome">
-                </label>
-                <label>
-                    <input class="form-control" id="input-lastname" type="text" placeholder="Sobrenome">
-                </label>
+                <input class="form-control" id="input-name" type="text" placeholder="Nome">
+                <input class="form-control" id="input-lastname" type="text" placeholder="Sobrenome">
             </div>
-            <div id="email-casas">
-                <label>
-                    <input  id="input-email" class="form-control"  type="email" placeholder="Email">
-                </label>
-                <label>
-                    <select id="house" class="form-select" name="Casa">
-                        <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-                        <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-                        <option id="corvinode-house" value="Corvinode">Corvinode</option>
-                        <option id="pytherina-house" value="Pytherina">Pytherina</option>
-                    </select>
-                </label>
+            <div class="section-form">
+                <input id="input-email" class="form-control" type="email" placeholder="Email">
+                <select id="house" class="form-select" name="Casa">
+                    <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+                    <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+                    <option id="corvinode-house" value="Corvinode">Corvinode</option>
+                    <option id="pytherina-house" value="Pytherina">Pytherina</option>
+                </select>
             </div>
             <!-- Requisito 12-->
             <section class="section-main">
                 <section class="form-radius">
-                    <label  for="" id="label-family">Qual sua família?</label>
+                    <label for="" id="label-family">Qual sua família?</label>
                     <div>
                         <input type="radio" name="family" id="" value="Frontend">Frontend
                     </div>
@@ -112,13 +104,12 @@
                 <input type="checkbox" name="" id="agreement">
             </div>
             <!-- Requisito 17 e 18-->
-                <button id="submit-btn" type="submit" disabled>Enviar</button>
+            <button id="submit-btn" type="submit" disabled>Enviar</button>
         </form>
         <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="logo da Trybewarts">
     </main>
     <script src="script.js"></script>
-    <footer class="footer">
-        Direitos reservados à Trybewarts©
-    </footer>
+    <footer class="footer">Direitos reservados à Trybewarts©</footer>
 </body>
+
 </html>
