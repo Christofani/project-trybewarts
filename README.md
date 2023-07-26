@@ -14,7 +14,7 @@
  ## Descrição:
 Este projeto é um formulário de avaliação interativo, desenvolvido com o uso das tecnologias HTML, CSS e JavaScript. O formulário foi criado para coletar informações dos usuários e proporcionar uma experiência interativa ao preencher os dados.
 
-### Aprendizados
+### Aprendizados:
 
 HTML: Aprendi a estruturar o formulário utilizando tags semânticas e diversos tipos de elementos de entrada, permitindo ao usuário fornecer seus dados de forma organizada e acessível.
 
