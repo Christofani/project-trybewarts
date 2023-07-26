@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="background-image: url(images/bad79647e6f53c675fd8d050090c292080fad037_hq.jpg);">
+<body style="background-image: url(images/ff9e3f79a846647bb341fa7367af4dfd.jpg);">
     <header class="header">
         <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="logo trybewarts">
         <h1 id="trybewarts-header-title">Trybewarts</h1>
@@ -41,14 +41,26 @@
             <section class="section-main">
                 <section class="form-radius">
                     <label for="" id="label-family">Qual sua família?</label>
-                    <div>
-                        <input type="radio" name="family" id="" value="Frontend">Frontend
+                    <div class="form-check" >
+                        <label for="front">
+                            <input
+                            class="form-check-input" 
+                            type="radio" name="family" id="front" value="Frontend">Frontend
+                        </label>
                     </div>
-                    <div>
-                        <input type="radio" name="family" id="" value="Backend">Backend
+                    <div class="form-check" >
+                        <label for="back">
+                            <input
+                            class="form-check-input" 
+                            type="radio" name="family" id="back" value="Backend">Backend
+                        </label>
                     </div>
-                    <div>
-                        <input type="radio" name="family" id="" value="FullStack">FullStack
+                    <div class="form-check" >
+                        <label for="full">
+                            <input
+                            class="form-check-input" 
+                            type="radio" name="family" id="full" value="FullStack">FullStack
+                        </label>
                     </div>
                 </section>
                 <!-- Requisito 13-->

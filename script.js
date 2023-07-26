@@ -1,11 +1,9 @@
 const botao = document.querySelector('#botao1');
 
-// Função para exibir uma mensagem de alerta
 const exibirAlerta = (mensagem) => {
   window.alert(mensagem);
 };
 
-// Função para validar os dados do formulário
 const validaDados = () => {
   botao.addEventListener('click', () => {
     const email = document.querySelector('#input-email1').value;
@@ -21,12 +19,30 @@ const validaDados = () => {
 
 validaDados();
 
-// --------- Requisito 18 ---------
-
 const checkBox = document.querySelector('#agreement');
 const btnSub = document.querySelector('#submit-btn');
 
-// Função para substituir os campos do formulário pelos valores fornecidos pela pessoa usuária
+const dividirObservacoes = (texto, comprimentoMaximo) => {
+  const palavras = texto.split(' ');
+  const linhas = [];
+  let linhaAtual = '';
+
+  // eslint-disable-next-line no-restricted-syntax
+  for (const palavra of palavras) {
+    if (linhaAtual.length + palavra.length + 1 <= comprimentoMaximo) {
+      linhaAtual += `${palavra} `;
+    } else {
+      linhas.push(linhaAtual.trim());
+      linhaAtual = `${palavra} `;
+    }
+  }
+  if (linhaAtual) {
+    linhas.push(linhaAtual.trim());
+  }
+
+  return linhas.join('\n');
+};
+
 // eslint-disable-next-line max-lines-per-function
 const enviarFormulario = (event) => {
   event.preventDefault();
@@ -39,22 +55,24 @@ const enviarFormulario = (event) => {
   const materias = Array.from(materiasSelecionadas).map((materia) => materia.value).join(', ');
   const avaliacao = document.querySelector('input[name="rate"]:checked').value;
   const observacoes = document.querySelector('#areaDoTexto').value;
+  const observacoesFormatadas = dividirObservacoes(observacoes, 30);
+
   const formResultado = document.createElement('div');
   formResultado.className = 'formResultado';
   formResultado.innerHTML = `
-    Nome: ${nome} ${sobrenome};<br>
-    Email: ${email};<br>
-    Casa: ${casa};<br>
-    Família: ${familia};<br>
-    Matérias: ${materias};<br>
-    Avaliação: ${avaliacao};<br>
-    Observações: ${observacoes}.
-  `;
+        Nome: ${nome} ${sobrenome};<br>
+        Email: ${email};<br>
+        Casa: ${casa};<br>
+        Família: ${familia};<br>
+        Matérias: ${materias};<br>
+        Avaliação: ${avaliacao};<br>
+        Observações: ${observacoesFormatadas}.
+      `;
+
   const form = document.querySelector('#evaluation-form');
   form.replaceWith(formResultado);
 };
 
-// Função para habilitar ou desabilitar o botão de envio com base na concordância com as informações
 const atualizarBotaoEnvio = () => {
   btnSub.disabled = !checkBox.checked;
 };
